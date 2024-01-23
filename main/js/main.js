@@ -36,7 +36,6 @@ function delitetodo(id) {
     .catch((error) => console.error("Add Todo Error:", error));
 }
 
-
 async function deliteUser(id) {
   let res = await fetch(Main__IP + "/todo/" + id, {
     method: "DELETE",
