@@ -19,7 +19,7 @@ addTodoForm.addEventListener("submit", function (e) {
       alert(data.message);
       console.log(data.todo.userId);
       info.innerHTML = `
-      <li>Todo: ${data[i].todo} <i class="fa-solid fa-user-pen"  onclick="editUser('${data.todo.userId}')"> </i> <i class="fa-solid fa-trash ii" onclick="deliteUser('${data.todo.userId}')"></i></li>`;
+      <li>Todo: ${data.todo.task} <i class="fa-solid fa-user-pen"  onclick="editUser('${data.todo.userId}')"> </i> <i class="fa-solid fa-trash ii" onclick="deliteUser('${data.todo.userId}')"></i></li>`;
     })
     .catch((error) => console.error("Add Todo Error:", error));
 });
